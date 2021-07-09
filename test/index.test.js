@@ -1,3 +1,5 @@
+/* eslint-disable eol-last */
+/* eslint-disable node/handle-callback-err */
 import { expect, server, BASE_URL } from './setup';
 
 describe('Index page test', () => {
@@ -8,7 +10,7 @@ describe('Index page test', () => {
             .end((err, res) => {
                 expect(res.status).to.equal(200);
                 expect(res.body.message).to.equal(
-                    "Environment variable is coming across"
+                    'Environment variable is coming across'
                 );
                 done();
             });

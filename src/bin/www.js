@@ -1,5 +1,11 @@
 #!/usr/bin/env node
 
+/* eslint-disable eol-last */
+
+/* eslint-disable indent */
+
+/* eslint-disable no-unreachable */
+
 /**
  * Module dependencies.
  */
@@ -36,7 +42,7 @@ const server = http.createServer(app);
 /**
  * Event listener for HTTP server "error" event.
  */
-const onError = (error) => {
+const onError = error => {
     if (error.syscall !== 'listen') {
         throw error;
     }
