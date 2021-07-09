@@ -8,7 +8,7 @@ matrix:
 cache:
   directories: [node_modules]
 install:
-  npm
+  npm install
 after_success: npm coverage
 before_script:
   - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
