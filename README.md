@@ -1,0 +1,1 @@
+[![Build Status](https://travis-ci.com/3itheror/weather-api.svg?token=YzKt3g2PZm1xjxXP4bSd&branch=master)](https://travis-ci.com/3itheror/weather-api)
