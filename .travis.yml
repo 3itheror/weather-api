@@ -1,4 +1,5 @@
 language: node_js
+os: linux
 env:
   global:
     - CC_TEST_REPORTER_ID=57e0176f5bbbaa914ec8aeb14c53a013d3d71fbc9c46715542c204d35c5f0562
@@ -7,6 +8,7 @@ matrix:
   - node_js: '14'
 cache:
   directories: [node_modules]
+before_install: npm i -g npm@version-number
 install:
   npm install
 after_success: npm coverage
@@ -15,6 +17,6 @@ before_script:
   - chmod +x ./cc-test-reporter
   - ./cc-test-reporter before-build
 script:
-  - npm run test
+  - npm test
 after_script:
   - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
